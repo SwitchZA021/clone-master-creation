@@ -1,4 +1,4 @@
-import { LayoutDashboard, Users, Briefcase, MessageSquare, FileText, BarChart2, Settings } from "lucide-react";
+import { LayoutDashboard, Users, Briefcase, MessageSquare, FileText, BarChart2, Settings, MessageCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Link, useLocation } from "react-router-dom";
 
@@ -12,6 +12,9 @@ const sidebarItems = [
     { icon: MessageSquare, label: "Interviews", href: "/interviews" },
     { icon: FileText, label: "Templates", href: "/templates" },
     { icon: BarChart2, label: "Analytics", href: "/analytics" },
+  ]},
+  { section: "AI", items: [
+    { icon: MessageCircle, label: "Chat", href: "/chat" },
   ]},
   { section: "OTHER", items: [
     { icon: Settings, label: "Settings", href: "/settings" },

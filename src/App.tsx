@@ -11,6 +11,7 @@ import Interviews from "./pages/Interviews";
 import Templates from "./pages/Templates";
 import Analytics from "./pages/Analytics";
 import Settings from "./pages/Settings";
+import Chat from "./pages/Chat";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/interviews" element={<Interviews />} />
           <Route path="/templates" element={<Templates />} />
           <Route path="/analytics" element={<Analytics />} />
+          <Route path="/chat" element={<Chat />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
