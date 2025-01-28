@@ -1,4 +1,4 @@
-import { LayoutDashboard, Users, Briefcase, MessageSquare, FileText, BarChart2, Settings, MessageCircle } from "lucide-react";
+import { LayoutDashboard, Users, Briefcase, MessageSquare, FileText, BarChart2, Settings, MessageCircle, Calendar, ListTodo, FileSpreadsheet, Mail, Bot, BookOpen, UserCircle, HelpCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Link, useLocation } from "react-router-dom";
 
@@ -7,17 +7,26 @@ const sidebarItems = [
     { icon: LayoutDashboard, label: "Dashboard", href: "/" },
     { icon: Users, label: "Candidates", href: "/candidates" },
     { icon: Briefcase, label: "Job Listings", href: "/jobs" },
+    { icon: Calendar, label: "Calendar", href: "/calendar" },
+    { icon: ListTodo, label: "Tasks", href: "/tasks" },
   ]},
   { section: "TOOLS", items: [
     { icon: MessageSquare, label: "Interviews", href: "/interviews" },
     { icon: FileText, label: "Templates", href: "/templates" },
     { icon: BarChart2, label: "Analytics", href: "/analytics" },
+    { icon: FileSpreadsheet, label: "Reports", href: "/reports" },
+    { icon: Mail, label: "Email Templates", href: "/email-templates" },
   ]},
   { section: "AI", items: [
     { icon: MessageCircle, label: "Chat", href: "/chat" },
+    { icon: Bot, label: "Resume Parser", href: "/resume-parser" },
+    { icon: Bot, label: "Job Matcher", href: "/job-matcher" },
   ]},
   { section: "OTHER", items: [
+    { icon: UserCircle, label: "Profile", href: "/profile" },
     { icon: Settings, label: "Settings", href: "/settings" },
+    { icon: BookOpen, label: "Documentation", href: "/docs" },
+    { icon: HelpCircle, label: "Help", href: "/help" },
   ]},
 ];
 
